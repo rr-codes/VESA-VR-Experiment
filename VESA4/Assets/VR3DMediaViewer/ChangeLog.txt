@@ -1,0 +1,45 @@
+  
+---------------------------------------
+
+Change Log:
+
+2.0:
+	Complete rewrite.
+	Full support for all formats when using animated textures like video.
+	New "Stereoscopic 3D Image" asset system to better pre-configure media for display.
+	Easier streamlined setup.
+	Support for Unity 5.6 VideoPlayer.
+	Improved Stereoscopic 3D Screenshot script.
+	Reorganized file hierarchy.
+	Replaced the old "Example Image" with 7 real Stereoscopic 3D images.
+
+2.01:	
+	Added a Vive SDK check to the camera setup script, and resulting adjustments to the setup procedure.
+	Exposed the currentImage variable to public read access.	
+	The ImageFormat variable is now read only. Use SetFormat() to change the format via script.
+	Addressed an issue with several Methods not expecting a scenerio where no Stereoscopic 3D image is being displayed.
+	Fixed the issue where you couldn't access public Methods and Variables before the Start() method had processed, without causing errors.
+	Fixed an issue with changing the format of an active video via SetFormat() causing the video to restart from the begining.
+
+2.1:
+	Improved the camera setup procedure with a, hopefully, easier to understand button. The old right click menu is still available though.
+	Added support for using the UI.RawImage component as a canvas to display 3D media.
+	Added a new high poly count 360 canvas. It's now used in the demo scene. The old low poly version is still available though.
+	Misc bug fixes.
+
+2.2:
+	Converted the ReadMe to a Manual.
+	Fixed some position/rotation issues with the Stereoscopic3DScreenshot script.
+	Added new demo content/scene to show how to use the Stereoscopic3DScreenshot script to allow players to make use of it at runtime/gametime.
+
+2.3:
+	Added new Panoramic shader based canvas formats.
+	Added wrapModeOverride option to Stereoscopic3dImage objects. This is mostly for video clip textures that don't expose the WrapMode property in the Import Settings.
+	Added ConvergenceMode option.
+	Fixed a rotation bug with the Example3DScreenshotController.
+	Reorganized the Demo Scenes folder hierarchy.
+	Tuned up the Stereoscopic3DImage object inspector.
+	Tweaked the AnaglyphToSBSTexture() method to support more than just Red/Cyan now.
+	The camera setup notification box will now not display on the example cross-eyed camra rigs.
+	Added scenes/canvas meshes for 180 Panoramic display.
+

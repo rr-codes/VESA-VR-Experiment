@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2815f7b47b270de439eecf012863b390, type: 3}
+  m_Name: ExampleStereo360Panorama-Standard
+  m_EditorClassIdentifier: 
+  sourceTexture: {fileID: 2800000, guid: b88a9470a44ab61448dedecac6aaeddb, type: 3}
+  sourceTexture2: {fileID: 0}
+  videoClip: {fileID: 0}
+  videoURL: 
+  imageFormat: 2
+  canvasFormat: 0
+  rotation: 0
+  swapLeftRight: 0
+  convergence: 0
+  maxConvergence: 0
+  crop: 0
+  wrapModeOverride: -1
+  verticalFlip: 0
+  leftEyeColor: {r: 1, g: 0, b: 0, a: 1}
+  rightEyeColor: {r: 0, g: 1, b: 1, a: 1}
